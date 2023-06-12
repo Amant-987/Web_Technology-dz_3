@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>DY_2</title>
-		<script>
-			
-function askFavoriteMovie() {
-    let movie = "";
-    while (movie === "") {
-      movie = window.prompt("Введите ваш любимый фильм:");
-      if (movie === "" || movie === null) {
-        alert("Попробуйте ещё раз");
-        movie = "";
+  <head>
+    <meta charset="UTF-8">
+    <title>Моя страница</title>
+  </head>
+  <body>
+    <button onclick="askFavoriteMovie()">Введите ваш любимый фильм</button>
+    <script>
+      function askFavoriteMovie() {
+        let movie = "";
+        while (movie === "") {
+          movie = window.prompt("Введите ваш любимый фильм:");
+          if (movie === "" || movie === null) {
+            alert("Попробуйте ещё раз");
+            movie = "";
+          }
+        }
+        alert(`Ваш любимый фильм: ${movie}`);
       }
-    }
-    alert(`Ваш любимый фильм: ${movie}`);
-  }
-		</script>
-	</head>
-	<body>
-		Asking about movie)
-	</body>
+    </script>
+  </body>
 </html>
