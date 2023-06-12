@@ -1,17 +1,14 @@
-let arr = [5, 2, 8, 1, 4, 7];
+// 2️⃣‼️Создайте массив с произвольными элементами. 
+// Отсортируйте его в обратном порядке и выведите 
+// в документе или консоли все данные из него. ‼️
+let arr = [];
+for (let i = 0; i < 10; i++) {
+  arr.push(Math.floor(Math.random() * 100));
+}
+console.log("Исходный массив: " + arr);
 
-// Сортировка в обратном порядке с помощью цикла
+let reversedArr = [];
 for (let i = arr.length - 1; i >= 0; i--) {
-  for (let j = 0; j < i; j++) {
-    if (arr[j] < arr[j + 1]) {
-      let temp = arr[j];
-      arr[j] = arr[j + 1];
-      arr[j + 1] = temp;
-    }
-  }
+  reversedArr.push(arr[i]);
 }
-
-// Вывод данных в консоль
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-}
+console.log("Отсортированный в обратном порядке массив: " + reversedArr);
